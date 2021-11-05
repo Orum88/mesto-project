@@ -5,7 +5,7 @@
     box-sizing: border-box;
     border: 1px solid white;
     align-self: center;
-    background-image: url(../../../images/edit.png);
+    background-image: url(../../../images/edit.svg);
     background-repeat: no-repeat;
     background-position: center;
     transition: opacity .4s, transform .3s linear;
