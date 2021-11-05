@@ -12,4 +12,4 @@
 
 **GitPages**
 
-* [Ссылка на gitpages](https://orum88.github.io/mesto-project/)
+* [Ссылка на Gitpages](https://orum88.github.io/mesto-project/)
