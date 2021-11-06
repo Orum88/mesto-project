@@ -2,16 +2,17 @@
   position: relative;
   max-width: 882px;
   display: grid;
-  grid-template-columns: repeat(3, 282px);
+  grid-template-columns: repeat(3, 281px);
   row-gap: 21px;
   column-gap: 18px;
-  margin: 51px auto 66px;
+  margin: auto;
+  padding: 0;
 }
 
 @media screen and (min-width: 770px) and (max-width: 935px) {
   .cards{
     width: 80%;
-    grid-template-columns: repeat(2, 282px);
+    grid-template-columns: repeat(2, 281px);
     grid-template-rows: repeat(3, 361px);
   }
 }
