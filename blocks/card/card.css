@@ -1,8 +1,10 @@
 .card {
     max-width: 282px;
     background-color: white;
+    color: #000;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
-
 
   

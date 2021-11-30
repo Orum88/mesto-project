@@ -23,65 +23,54 @@
           </div>
           <button type="button" class="profile__add"></button>
         </section>
-        <section class="cards">
-            <article class="card">
-              <img class="card__image" src="./images/1.jpg" alt="Карачаевск"/>
-              <div class="card__footer">
-                <h2 class="card__title">Карачаевск</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/2.png" alt="Гора Эльбрус"/>
-              <div class="card__footer">
-                <h2 class="card__title">Гора Эльбрус</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/3.png" alt="Домбай"/>
-              <div class="card__footer">
-                <h2 class="card__title">Домбай</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/2.png" alt="Гора Эльбрус"/>
-              <div class="card__footer">
-                <h2 class="card__title">Гора Эльбрус</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/3.png" alt="Домбай"/>
-              <div class="card__footer">
-                <h2 class="card__title">Домбай</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/1.jpg" alt="Карачаево-Черкесск"/>
-              <div class="card__footer">
-                <h2 class="card__title">Карачаево-Черкесск</h2>
-                <button type="button" class="card__heart card__heart_active"></button>
-              </div>
-            </article>
-        </section>
+        <section class="cards"></section>
       </main>
         <footer class="footer">
         <p class="footer__copyright">© 2021 Mesto Russia</p>
       </footer>
-    </div>
-    <div class="popup">
+
+    <div class="popup popup_profile">
         <div class="popup__container">
-            <button type="button" class="popup__close"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form" name="profile">
-                <input value="Жак-Ив Кусто" type="text" class="popup__input" name="name">
-                <input value="Исследователь океана" type="text" class="popup__input" name="job">
+            <form class="popup__form profile-edit" id="profile-edit" name="profile-edit">
+                <input class="popup__input popup__input-name" id="name" name="name" type="text" value="Жак-Ив Кусто">
+                <input value="Исследователь океана" type="text" id="job" class="popup__input popup__input-description" name="job" required>
                 <button type="submit" class="popup__submit">Сохранить</button>
             </form>
+            <button class="popup__close" type="button"></button>
         </div>
+    </div>
+    <div class="popup popup_add-card">
+        <div class="popup__container">
+            <h2 class="popup__title">Новое место</h2>
+            <form class="popup__form" name="add-card">
+                <input placeholder="Название" class="popup__input popup__card-title" type="text" name="card-title">
+                <input placeholder="Ссылка на картинку" class="popup__input popup__card-src" type="url"  name="card-src">
+                <button class="popup__submit" type="submit" value="Сохранить">
+                    Сохранить
+                </button>
+            </form>
+            <button class="popup__close" type="button"></button>
+        </div>
+    </div>
+    <div class="popup popup__type_image">
+        <figure class="view-card">
+            <button class="popup__close" type="button"></button>
+            <img src="" alt="" class="view-card__image" />
+            <figcaption class="view-card__caption"></figcaption>
+        </figure>
+    </div>
+    <template id="preset-card">
+        <div class="card">
+            <button class="card__delete" type="button"></button>
+            <img src="" alt="" class="card__image" />
+            <div class="card__tags">
+                <h2 class="card__title"></h2>
+                <button type="button" class="card__heart"></button>
+            </div>
+        </div>
+    </template>
+    <script src="./script/index.js"></script>
     </div>
   </body>
 </html>
