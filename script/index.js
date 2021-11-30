@@ -79,7 +79,7 @@ function addCardToStart(data) {
     cards.prepend(newCard);
 }
 
-const PresetCards = [
+const presetCards = [
     {
         name: "Лондон",
         link: "https://images.pexels.com/photos/507410/pexels-photo-507410.jpeg",
@@ -106,7 +106,7 @@ const PresetCards = [
     },
 ];
 
-PresetCards.forEach((card) => {
+presetCards.forEach((card) => {
     addCardToEnd({
         cardName: card.name,
         cardLink: card.link,

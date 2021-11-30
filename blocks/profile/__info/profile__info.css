@@ -1,15 +1,16 @@
 .profile__info {
-    margin: 22px 0 25px 0;
+    grid-area: info;
+    display: grid;
+    gap: 8px 18px;
+    grid-template-rows: min-content;
+    grid-template-columns: max-content;
+    grid-template-areas: "title button" "subtitle subtitle";
 }
 
-
-@media screen and (max-width: 1278px) {
+@media screen and (max-width: 550px) {
     .profile__info {
-        margin: auto;
-    }
-}
-  @media screen and (max-width: 985px) {
-    .profile__info {
-        margin: auto;
+        margin: 0 auto;
+        gap: 5px 10px;
+        grid-template-columns: minmax(235px, max-content) 37px;
     }
 }

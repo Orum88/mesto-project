@@ -1,44 +1,24 @@
-.profile__add {
-  margin-top: 35px;
-  margin-left: 246px;
+.profile__add{
+  width: 100%;
   height: 50px;
-  width: 150px;
-  padding: 0;
-  border: 2px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 2px;
+  margin: auto;
   background-color: black;
-  background-image: url(../../../images/plus.svg);
-  background-size: auto;
+  border: 2px solid white;
+  background-image: url("../../../images/plus.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  outline: none;
-}
-.profile__add:hover {
+  background-position:center;
+  border-radius: 2px;
   cursor: pointer;
-  opacity: .5;
+  grid-area: addbutton;
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 935px) {
-  .profile__add {
-    margin-left: 30px;
-  }
+.profile__add:hover {
+  opacity: 60%;
+  transition: 0.4s;
 }
 
-
-@media screen and (min-width: 420px) and (max-width: 768px) {
-  .profile__add {
-    width: 294px;
-    margin-left: 0;
-  }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 420px) {
-  .profile__add {
-    width: 282px;
-    margin-left: 0;
-    margin-top: 0;
+@media screen and (max-width: 550px) {
+  .profile__add{
+    margin-bottom: 0;
   }
 }
